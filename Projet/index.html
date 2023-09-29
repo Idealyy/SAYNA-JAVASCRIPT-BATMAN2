@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman 2</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div class="granddive">
+        <header class="container" id="home">
+            <nav class="navbar">
+                <div>
+                    <img id="logohome" src="Logos/logohome.png">
+                </div>
+                <div>
+                    <ul>
+                        <li class="texte">Home</li>
+                        <li class="texte"><u>Game</u></li>
+            
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <canvas style="position: absolute;" width="50" height="20" id="canvas"></canvas>
+        <section>
+            <div>
+                <h1 id="intro" class="Alltext">LET'S PLAY<br>A LITTLE GAME ...</h1>
+         
+                <div class="fleche">
+                    <img src="./Logos/flèche_down_header.png">
+                </div>
+            </div>            
+        </section>
+        <div class="sidebar">
+            <!-- Sidebar avec 5 logos -->
+            <div class="sidebar-item">
+                <a href="#home"><img src="./Logos/logo_bat_flèche.png" alt="Logo 1"></a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#"><img src="./Logos/icon_facebook.png" alt="Logo 2"></a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#"><img src="./Logos/icon_ig.png" alt="Logo 3"></a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#"><img src="./Logos/icon_tw.png" alt="Logo 4"></a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#footer"><img src="./Logos/logo_bat_flèche_2.png" alt="Logo 5"></a>
+            </div>
+        </div>
+        <section class="quiz">
+            <h2 class="texte Cetext">CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ?</h2>
+            <div id="Batgame_2" class="zoom">
+                <img  src="./img/Batgame_2.png">
+            </div>
+            <button class="startquiz hidden">DÉMARRER LE QUIZ</button>
+
+        </section>
+        
+
+
+    <section class="quiz-box hidden">
+        <div class="app">
+            <div class="test"><h1 class="numero"></h1></div>
+            <div class="Batquiz" >
+                <div class="quiz-img">
+                <img id="image-question-1" class="img-gauche" src="./img/Batgame_3.png" alt="Image Question 1" style="display: none;">
+                <img id="image-question-2" class="img-gauche" src="./img/Batgame_4.png" alt="Image Question 2" style="display: none;">
+                <img id="image-question-3" class="img-gauche" src="./img/Batgame_5.png" alt="Image Question 3" style="display: none;">
+                <img id="image-question-4" class="img-gauche" src="./img/Batgame_6.png" alt="Image Question 4" style="display: none;">
+                <img id="image-question-5" class="img-gauche" src="./img/Batgame_11.png" alt="Image Question 5" style="display: none;">
+                <img id="image-question-6" class="img-gauche" class="img-qst6" src="./img/Batgame_8.png" alt="Image Question 6" style="display: none;">
+                <img id="image-question-7" class="img-gauche" src="./img/Batgame_13.png" alt="Image Question 7" style="display: none;">
+                <img id="image-question-8" class="img-gauche" src="./img/Batgame_14.png" alt="Image Question 8" style="display: none;">
+                <img id="image-question-9" class="img-gauche" src="./img/Batgame_20.png" alt="Image Question 9" style="display: none;">
+                <img id="image-question-10" class="img-gauche" class="img-qst10" src="./img/Batgame_21.png" alt="Image Question 10" style="display: none;">
+                <img id="image-question-11" class="img-gauche" src="./img/Batgame_7.png" alt="Image Question 11" style="display: none;">
+                <img id="image-question-12" class="img-gauche" src="./img/Batgame_10.png" alt="Image Question 12" style="display: none;">
+
+                
+                </div>
+            <div class="quiz-contenu">
+                <h2 id="question"></h2>
+                <div id="answers-buttons">
+                    <input type="checkbox" class="btn"><label><span class="answer-text"></span></label>
+                    <input type="checkbox" class="btn"><label><span class="answer-text"></span></label>
+                    <input type="checkbox" class="btn"><label><span class="answer-text"></span></label>
+                </div>
+                <img id="image-question-6" class="img-sudEst" src="./img/Batgame_9-1.png" alt="Image Question 6" style="display: none;">
+            
+            </div>
+            
+
+
+
+        </div>
+    
+                <button id="next-btn">question suivante</button>
+                <img id="image-question-9" class="img-sudEst" src="./img/Batgame_13.png" alt="Image Question 9" style="display: none;">
+            <img id="image-question-10" class="img-sydEst" src="./img/Batgame_16.png" alt="Image Question 10" style="display: none;">
+        </div>
+
+
+            
+        </div>
+
+
+    </section>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <div id="score-display">
+                
+            </div>
+            <div id="restart-button-container">
+                <button id="restart-button">RECOMMENCER LE QUIZ</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+
+        <footer id="footer">
+            <ul id="footertexte">
+                <li class="FooterText jaune"><img src="./Logos/icon_WB.png"></li>
+                <li class="FooterText Projet">Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</li>
+            </ul>
+            <div id="icon">
+                <ul>
+                    <li class="footerImage footerlogo jaune"><img src="./Logos/logo_sayna_white.png"></li>
+                    <li class="footerImage footerX jaune"><img src="./Logos/icon_x.png"></li>
+                    <li class="footerImage footerlogo jaune"><img src="./Logos/icon_DC.png"></li>
+                    <li class="footerImage footericon jaune"><img src="./Logos/icon_facebook.png"></li>
+                    <li class="footerImage footericon jaune"><img src="./Logos/icon_ig.png"></li>
+                    <li class="footerImage footericon jaune"><img src="./Logos/icon_tw.png"></li>
+
+                </ul>
+            </div> 
+            
+        </footer>
+        
+        
+        
+    </div>
+    <script src="./css/script.js"></script>
+
+    
+</body>
+</html>

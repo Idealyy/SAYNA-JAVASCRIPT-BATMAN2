@@ -1,0 +1,481 @@
+@font-face {
+    font-family: "Rajdhani";
+    src: url(../fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: "bat";
+    src: url(./../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+body{
+    background: url(./../img/Batgame_1.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+.granddive{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left:2px solid grey ;
+    border-right: 2px solid grey;
+    height:auto;
+    
+}
+
+.granddive #intro{
+    width: 60%; 
+    color: white;
+    font-size: 52px; 
+    font-family:"Rajdhani"; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 1.56px; 
+    word-wrap: break-word;
+    margin: 20% 0 0 10%;
+}
+
+
+.texte{
+    width: 100%; 
+    height: 100%; 
+    color: white;
+    font-size: 28px; 
+    font-family:"Rajdhani"; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 0.84px; 
+    word-wrap: break-word;
+}
+#Batgame_2{
+    width: 100%;    
+}
+
+.zoom {
+    transform: scale(0);
+    transition: transform .7s ease-in-out;
+}
+
+.active{
+    transform: scale(1);
+    transition: transform .7s ease-in-out;
+}
+
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    
+
+}
+
+.container{
+    
+    border-bottom: 2px solid grey; 
+
+}
+
+.navbar img#logohome {
+    transform: translateY(30px);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    padding: 5px;
+    margin: 1%;
+}
+
+.sidemenu{
+    width: 100%; height: 100%; transform: rotate(-90deg); transform-origin: 0 0; border: 2px rgba(188, 187, 189, 0.15) solid;
+}
+
+
+.fleche {
+    position: relative;
+    width: 9%;
+    margin:50% auto 10% auto;
+}
+
+
+
+/* style sidebar */
+.sidebar {
+    height: 100%;
+    width:20%; /* Largeur de la barre latérale */
+    position: fixed;
+    top: 40%;
+    left: 79.4%;
+    bottom: 0;
+    overflow-y: auto; /* Permet de faire défiler la barre latérale si elle dépasse la hauteur de la fenêtre */
+}
+
+.sidebar-item {
+    padding: 5px; /* Espace entre les logos */
+    text-align: center;
+    
+}
+
+
+/* style footer */
+#footertexte{
+    display: inline-flex; 
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    margin-top: 300px;
+    margin-left:25%;
+    margin-right: 20%;
+    
+    
+}
+.Projet{
+    width: 100%; 
+    height: 100%; 
+    color: white;
+    font-size: 10px; 
+    font-family:"bat"; 
+    font-weight: 400;
+    line-height: 12px;
+    word-wrap: break-word
+    
+
+}
+
+#icon{
+    
+    height:10px;;
+    justify-content: center;
+    margin-top: 10px;
+}
+#icon ul{
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+
+}
+.footerlogo{
+    width: 18px;
+    height: 18px;
+    margin-right: 30px;
+    
+}
+.footericon {
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.footerX{
+    width: 24px;
+    height: 24px;
+    margin-left:10px;
+    margin-top: 12px;
+    margin-right: 2px;
+}
+ 
+
+.jaune:hover{
+    filter:invert(0%) sepia(100%) saturate(1680%) hue-rotate(350ged) brightness(350deg) contrast(104%);
+}
+#logohome:hover{
+    filter:invert(0%) sepia(100%) saturate(1680%) hue-rotate(350ged) brightness(350deg) contrast(104%);
+
+
+}
+#footer{
+    margin-top:10px;
+
+}
+
+/* Cachez initialement le texte en dehors de l'écran à gauche */
+.Alltext {
+    position: relative;
+    left: -100%; /* Déplacez le texte de 100% de sa largeur vers la gauche */
+    animation: slideIn 1s forwards; /* Utilisez l'animation "slideIn" pendant 1 seconde */
+  }
+  
+  /*animation "slideIn" */
+  @keyframes slideIn {
+    to {
+      left: 0; 
+    }
+  }
+
+
+.cetext {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    margin-top: 20%;
+  }
+  
+  /* Lorsque l'utilisateur fait défiler la page et que le texte est dans la vue*/
+  .Cetext.in-view {
+    width: auto;
+    opacity: 1;
+    transition: width 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+
+
+/* style du quiz */
+.numero{
+    transform: translateX(-15%);
+    color: white;
+    font-size: 36px;
+    font-family: Rajdhani;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.08px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom:50px;
+}
+.test{
+    margin-bottom: 80px;
+}
+.quiz{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz img {
+    width: 70%;
+}
+
+.quiz .startquiz {
+    padding:15px 60px ;
+    background: linear-gradient(274deg, #C06F28 0%, rgba(252, 232, 216, 0.40) 100%);
+    text-align: center;
+    color: white; 
+    font-size: 20px; 
+    font-family: Rajdhani; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 1.60px; 
+    margin-top: 50px;
+}
+
+.startquiz.quiz-box.hidden{
+    display: none;
+}
+
+.quiz-box.visible{
+    text-align: center;
+    font-family:'bat';
+    width:auto; 
+    display: block;
+    margin: 100px auto ;
+    
+}
+
+
+.app{
+    
+    
+    background-color:transparent;
+    width: 70%;
+    margin: 39% auto auto 24%;
+    margin-bottom: 8px;
+}
+.app h1{
+    font-size: 25px;
+    color:antiquewhite;
+    font-weight: 600;
+    border-bottom: 1px solid #0052;
+}
+
+.Batquiz{
+    padding:0px 0;
+    margin-top: 40px;
+}
+
+.app h2{
+    
+    font-size:20px;
+    color:antiquewhite;
+
+}
+
+.btn{
+    width: 70%; background: rgba(196, 196, 196, 0.60); border: 1px black solid;
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family:'bat';
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.btn:hover{
+    background: linear-gradient(274deg, #C06F28 0%, rgba(252, 232, 216, 0.40) 100%);
+    color: aliceblue;
+}
+.btn:active::before {
+    background-color: #d4d4d4;
+}
+
+
+#next-btn{
+    color: white;
+    font-size: 20px;
+    font-family: Rajdhani;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.60px;
+     padding-top: 20px; 
+     padding-bottom: 12px;
+     background: linear-gradient(274deg, #C06F28 0%, rgba(252, 232, 216, 0.40) 100%);
+    text-align: center;
+  font-size: 20px; 
+  font-family: Rajdhani; 
+  font-weight: 500;
+   text-transform: uppercase;
+    margin-top: 90px;
+    width:80%;
+    max-width: 50%;
+}
+
+
+#question{
+color: white;
+font-size: 22px;
+font-family: 'bat';
+font-weight: 400;
+line-height: 28px;
+word-wrap: break-word;
+
+}
+#answers-buttons{
+display: block;
+}
+
+
+
+
+/* Styles pour le modal */
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    width: 45%; 
+    height: 400px;
+    margin: 5% auto;
+    text-align: center;
+    padding-top: 2%;
+    background: linear-gradient(33deg, rgba(0, 0, 0, 0.40) 0%, rgba(192, 111, 40, 0.50) 100%); 
+    box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.16); 
+    border-radius: 25px; 
+    backdrop-filter: blur(42px); 
+}
+#restart-button{
+    height: 50%; 
+    /* padding-left: 80px; 
+    padding-right: 80px;  */
+    padding-top: 14px; 
+    padding-bottom: 14px; 
+    background: linear-gradient(274deg, #C06F28 0%, rgba(252, 232, 216, 0.40) 100%);
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    display: inline-flex;
+    text-align: center;
+    color: white; 
+    font-size: 20px; 
+    font-family: Rajdhani; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 1.60px; 
+    word-wrap:break-word;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+/* Style pour le bouton de fermeture (×) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff; 
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+
+
+/* CSS img avec les quiz*/
+.img-gauche{
+    width: 150px;
+    position: absolute;
+    transform: translateX(-95%);
+    
+}
+.img-ouest{
+    width:100%;
+    height: 150px;
+    transform: translateY(-40px);
+    transform: rotateX('10 deg');
+}
+.img-sudOuest{
+    width: 100%;
+    height: 200px;
+    transform: translateY(50px);
+}
+.img-sudEst{
+    width: auto;
+    height: px;
+    transform: translateY(-200px);
+}
+#image-question-10{
+    width: auto;
+    height: 200px;
+}
+.btn-align{
+    display: flex;
+}
+
+@media (max-width: 515px) {
+    .sidebar{
+        transform: translateX(-12px);
+    }
+
+    .quiz .startquiz{
+        padding: 10px 20px;
+        width: 60%;
+        font-size: 15px;
+    }
+    #next-btn{
+        transform: translateX(35px);
+    }
+}
+
+
+
+
+
+
+  
+  
+
+
+
